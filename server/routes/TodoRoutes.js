@@ -1,0 +1,11 @@
+const route = require("express").Router();
+const TodoController = require("../controllers/TodoController.js");
+const AuthMiddleware = require("../middlewars/auth-middlewar");
+route.post("/todos", TodoController.createTodo);
+route.patch("/todos/:userId/:id", TodoController.updateTodo);
+route.delete("/todos/:id", TodoController.removeTodo);
+route.delete("/todos/:userId/:folderId", TodoController.removeTodosByFolder);
+route.get("/todos/:userId", AuthMiddleware, TodoController.getAllTodos);
+route.get("/todos/:id", AuthMiddleware, TodoController.getOneTodo);
+route.get("/todos/:userID/:folderID", TodoController.getTodoByFolder);
+module.exports = route;
