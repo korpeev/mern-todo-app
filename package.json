@@ -1,0 +1,22 @@
+{
+  "name": "mern-todo",
+  "version": "1.0.0",
+  "description": "## Instalition Guide",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm run start",
+    "client": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korpeev/mern-todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korpeev/mern-todo-app/issues"
+  },
+  "homepage": "https://github.com/korpeev/mern-todo-app#readme"
+}
