@@ -22,9 +22,10 @@ app.options("*", cors());
 app.use("/api", userRoutes);
 app.use("/api", TodoRoutes);
 app.use("/api", FolderRoutes);
+
 app.use(express.static(path.join(__dirname, "../client/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 app.use(errorMiddleware);
 const PORT = process.env.PORT || 5000;
