@@ -29,7 +29,7 @@ const Navbar = () => {
     setPopup(false);
   };
   const handleAllFolders = (): void => {
-    navigate("/home/*");
+    navigate("/*");
     setActiveClass(null);
     dispatch(fetchTodos(userId));
   };
@@ -49,7 +49,7 @@ const Navbar = () => {
             "flex my-2  font-medium cursor-pointer p-2 transition ease-in z-0 hover:bg-green-100",
             {
               "bg-green-400 text-white hover:bg-green-400":
-                location.pathname === "/home/*",
+                location.pathname === "/*",
             }
           )}
         >
