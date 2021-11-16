@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": ">=8"
+    "node": "14.18.1"
   },
   "bugs": {
     "url": "https://github.com/korpeev/mern-todo-app/issues"
