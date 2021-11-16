@@ -7,7 +7,8 @@ const userRoutes = require("./routes/UserRoutes.js");
 const TodoRoutes = require("./routes/TodoRoutes.js");
 const FolderRoutes = require("./routes/FolderRoutes");
 const errorMiddleware = require("./middlewars/error-middlewar.js");
-require("dotenv").config();
+const dotEnv = require("dotenv");
+dotEnv.config({ path: path.join(__dirname, ".env") });
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
@@ -38,5 +39,4 @@ const startApp = async () => {
     console.log(error);
   }
 };
-
 module.exports = startApp;

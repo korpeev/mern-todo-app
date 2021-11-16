@@ -4,7 +4,7 @@
   "description": "## Instalition Guide",
   "main": "index.js",
   "scripts": {
-    "server ": "cd server && npm install && npm run start",
+    "server": "cd server && npm install && npm run start",
     "client": "cd client && npm install && npm run build",
     "heroku-postbuild": "npm run server && npm run client"
   },
