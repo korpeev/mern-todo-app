@@ -59,6 +59,6 @@
     "autoprefixer": "^9.8.8",
     "postcss": "^7.0.39",
     "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
