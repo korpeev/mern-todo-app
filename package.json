@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/korpeev/mern-todo-app/issues"
   },
-  "homepage": "https://github.com/korpeev/mern-todo-app#readme"
+  "homepage": "https://github.com/korpeev/mern-todo-app#readme",
+  "dependencies": {}
 }

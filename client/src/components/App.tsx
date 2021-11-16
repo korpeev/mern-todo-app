@@ -22,10 +22,10 @@ const App = () => {
       <Routes>
         <Route
           path="/auth/*"
-          element={!isAuth ? <Landing /> : <Navigate to={`/home/*`} />}
+          element={!isAuth ? <Landing /> : <Navigate to={`/*`} />}
         />
         <Route
-          path={`/home/*`}
+          path={`/*`}
           element={isAuth ? <Home /> : <Navigate to="/auth/login" />}
         >
           <Route path=":folderId" element={<TodoList />} />
